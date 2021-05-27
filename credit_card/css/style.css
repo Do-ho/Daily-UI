@@ -3,3 +3,7 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
     user-select: none;
 }
+
+.inputBox-group {
+    position: relative;
+}
