@@ -1,5 +1,7 @@
+import InputBox from './components/InputBox.js'
+
 export default class App {
   constructor($target) {
-    // const signupboxEl = new SignupBox($target);
+    const inputBoxEl = new InputBox($target, "카드사");
   }
 }
