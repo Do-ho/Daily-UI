@@ -11,5 +11,6 @@ export default class CreditCardBox {
         const CreditCardBoxEl = $target.querySelector(".creditcard");
         const creditCardHeader = new CreditCardHeader(CreditCardBoxEl);
         const creditCardBody = new CreditCardBody(CreditCardBoxEl);
+        
     }
 }
