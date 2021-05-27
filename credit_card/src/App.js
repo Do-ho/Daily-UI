@@ -1,7 +1,9 @@
-import InputBox from './components/InputBox.js'
+import InfoBox from './components/InfoBox.js';
+import CreditCardBox from './components/CreditCardBox.js';
 
 export default class App {
   constructor($target) {
-    const inputBoxEl = new InputBox($target, "카드사");
+    const infoBox = new InfoBox($target);
+    const creditCardBox2 = new CreditCardBox($target);
   }
 }
