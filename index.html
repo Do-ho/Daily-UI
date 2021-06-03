@@ -1,14 +1,52 @@
-<!DOCTYPE html>
-<head>
-    <meta charset='utf-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title> Do-ho Daily-UI</title>
-    <link rel="stylesheet" href="./index.css">
-</head>
+<html theme="light">
+    <head>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title> Do-ho Daily-UI</title>
+        <link rel="stylesheet" href="./index.css">
 
-<body>
-    <a href="signup/index.html"> 1. signup</a>
-    <a href="credit_card/index.html"> 2. credit_card</a>
-</body>
+        <script>
+            function buttonEl_click() {
+                const ButtonEl = document.querySelector(".Btn-theme");
+                const MoonEl = ButtonEl.querySelector(".moon");
+                const SunEl = ButtonEl.querySelector(".sun");
+                const HtmlEl = document.querySelector('html');
 
+                if(HtmlEl.getAttribute('theme') === "light") {
+                    MoonEl.setAttribute('style', 'display: none');
+                    SunEl.setAttribute('style', 'display: ""');
+                    HtmlEl.setAttribute('theme', "dark");
+                }
+                else {
+                    MoonEl.setAttribute('style', 'display: ""');
+                    SunEl.setAttribute('style', 'display: none');
+                    HtmlEl.setAttribute('theme', "light");
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <header>
+            Daily-UI
+        </header>
+        <section>
+            <div class="card-container">
+                <a class="card-item" href="signup/index.html">
+                    <img src="./landing/img/signup.PNG" />
+                </a>
+                <a class="card-item" href="credit_card/index.html">
+                    <img src="./landing/img/credit-card.PNG" />
+                </a>
+                <a class="card-item" href="">
+                    <img src="./landing/img/landing.PNG" />
+                </a>
+            </div>
+        </section>
+        <Button class="Btn-theme" value="light" onclick="buttonEl_click();">
+            <svg class="moon" viewBox="0 0 99.893 100"><g transform="translate(-0.156 0.156)"><path d="M99.439,62.12a2,2,0,0,0-2.279,0A42.84,42.84,0,0,1,38.28,3.161,2,2,0,0,0,36,0a51.08,51.08,0,1,0,64,64A2,2,0,0,0,99.439,62.12Z" fill="#aaaaaa"></path></g></svg>
+            <svg class="sun" style="display: none;" viewBox="0 0 89.002 89" class="css-13949jm"><g transform="translate(-5.499 -5.334)"><path d="M52.432,20.219A2.432,2.432,0,0,1,50,22.65h0a2.432,2.432,0,0,1-2.431-2.431V7.765A2.432,2.432,0,0,1,50,5.334h0a2.432,2.432,0,0,1,2.433,2.431Z" fill="#aaaaaa"></path><circle cx="24.163" cy="24.163" r="24.163" transform="translate(25.837 25.469)" fill="#aaaaaa"></circle><path d="M47.568,79.447A2.434,2.434,0,0,1,50,77.015h0a2.433,2.433,0,0,1,2.431,2.432V91.9A2.433,2.433,0,0,1,50,94.334h0A2.434,2.434,0,0,1,47.568,91.9Z" fill="#aaaaaa"></path><path d="M79.613,52.265a2.431,2.431,0,0,1-2.43-2.433h0a2.431,2.431,0,0,1,2.43-2.43H92.069a2.432,2.432,0,0,1,2.432,2.43h0a2.434,2.434,0,0,1-2.432,2.433Z" fill="#aaaaaa"></path><path d="M20.385,47.4a2.432,2.432,0,0,1,2.432,2.432h0a2.433,2.433,0,0,1-2.432,2.431H7.931A2.433,2.433,0,0,1,5.5,49.834h0A2.432,2.432,0,0,1,7.931,47.4Z" fill="#aaaaaa"></path><path d="M72.66,30.612a2.431,2.431,0,0,1-3.439,0h0a2.434,2.434,0,0,1,0-3.438l8.808-8.807a2.432,2.432,0,0,1,3.438,0h0a2.434,2.434,0,0,1,0,3.439Z" fill="#aaaaaa"></path><path d="M27.34,69.055a2.432,2.432,0,0,1,3.439,0h0a2.432,2.432,0,0,1,0,3.438L21.972,81.3a2.433,2.433,0,0,1-3.438,0h0a2.433,2.433,0,0,1,0-3.44Z" fill="#aaaaaa"></path><path d="M69.221,72.492a2.432,2.432,0,0,1,0-3.438h0a2.433,2.433,0,0,1,3.438,0l8.807,8.806a2.434,2.434,0,0,1,0,3.438h0a2.432,2.432,0,0,1-3.44,0Z" fill="#aaaaaa"></path><path d="M30.778,27.173a2.431,2.431,0,0,1,0,3.439h0a2.433,2.433,0,0,1-3.438,0l-8.806-8.807a2.432,2.432,0,0,1,0-3.438h0a2.432,2.432,0,0,1,3.439,0Z" fill="#aaaaaa"></path></g></svg>
+        </Button>
+        
+    </body>
 </html>
